@@ -397,4 +397,5 @@ a:active {
 
 .aboutSection {
   display: flex;
+  justify-content: center;
 }
