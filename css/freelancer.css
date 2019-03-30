@@ -400,5 +400,5 @@ a:active {
   justify-content: center;
 }
 #about-p {
-  margin: 0 !important;
+  margin-left: -180%;
 }
