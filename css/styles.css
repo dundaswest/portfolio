@@ -339,9 +339,7 @@ a:hover {
   display: flex;
   justify-content: center;
 }
-#about-p {
-  margin-left: -180%;
-}
+
 .footer {
   justify-content: center;
 }
