@@ -345,3 +345,6 @@ a:hover {
 .footer {
   justify-content: center;
 }
+.mb-5 {
+  border: 2.5px solid #d5daeb;
+}
