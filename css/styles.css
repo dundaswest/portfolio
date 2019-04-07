@@ -344,5 +344,6 @@ a:hover {
   justify-content: center;
 }
 .img-fluid {
+  max-height: 190.17px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
