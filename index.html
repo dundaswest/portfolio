@@ -10,26 +10,7 @@
     <meta name="author" content="" />
 
     <title>protfolio</title>
-    <script
-      type="text/javascript"
-      src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function() {
-        emailjs.init("user_9blVhuWRJd0eBHjQ7Boa5");
-      })();
-    </script>
-    <script type="text/javascript">
-      window.onload = function() {
-        document
-          .getElementById("contactForm")
-          .addEventListener("submit", function(event) {
-            event.preventDefault();
 
-            emailjs.sendForm("contact_service", "contact_template", this);
-          });
-      };
-    </script>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -59,6 +40,26 @@
 
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_9blVhuWRJd0eBHjQ7Boa5");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm("contact_service", "contact_template", this);
+          });
+      };
+    </script>
   </head>
 
   <body id="page-top">
