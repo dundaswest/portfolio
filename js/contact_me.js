@@ -29,7 +29,7 @@ $(function() {
           phone: phone,
           email: email,
           message: message
-        },
+        }.serialize(),
         dataType: "json",
         cache: false,
         success: function() {
