@@ -347,4 +347,5 @@ a:hover {
 }
 .img-fluid {
   border: 2.5px solid #d5daeb;
+  max-height: 191.56px;
 }
