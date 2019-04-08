@@ -50,22 +50,31 @@
       })();
     </script>
     <script type="text/javascript">
-       window.onload = function() {
-         document
-           .getElementById("contactForm")
-           .addEventListener("submit", function(event) {
-             event.preventDefault();
+      window.onload = function() {
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", function(event) {
+            event.preventDefault();
 
-             emailjs.sendForm(
-               "hello@eunbyul.com",
-               "template_NVCdoYPk",
-               this,
-               "user_9blVhuWRJd0eBHjQ7Boa5"
-             ).then(function(){
-      alert("Sent!");
-           }), function(err) {
-        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-       };
+            emailjs
+              .sendForm(
+                "hello@eunbyul.com",
+                "template_NVCdoYPk",
+                this,
+                "user_9blVhuWRJd0eBHjQ7Boa5"
+              )
+              .then(
+                function() {
+                  alert("Sent!");
+                },
+                function(err) {
+                  alert(
+                    "Send email failed!\r\n Response:\n " + JSON.stringify(err)
+                  );
+                }
+              );
+          });
+      };
     </script>
   </head>
 
