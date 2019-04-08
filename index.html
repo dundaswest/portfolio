@@ -56,7 +56,12 @@
           .addEventListener("submit", function(event) {
             event.preventDefault();
 
-            emailjs.sendForm("gmail", "template_NVCdoYPk", this);
+            emailjs.sendForm(
+              "gmail",
+              "template_NVCdoYPk",
+              this,
+              "user_9blVhuWRJd0eBHjQ7Boa5"
+            );
           });
       };
     </script>
